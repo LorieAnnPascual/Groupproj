@@ -149,7 +149,7 @@ header {
 .section1 {
   margin: 1rem;
   text-align: center;
-  height: 100vh;
+  min-height: 70vh;
   position: relative;
 }
 
@@ -198,6 +198,9 @@ header {
   .hidden {
     display: block;
   }
+  .overflow {
+    overflow: hidden;
+  }
   .nav_ul {
     position: fixed;
     left: 100%;
@@ -220,8 +223,10 @@ header {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     height: 100vh;
+    text-align: center;
   }
   .nav_ul .nav_a {
+    line-height: 8rem;
     color: #181818;
     font-size: 4.5rem;
   }
@@ -270,10 +275,10 @@ header {
   }
   .intro .intro_img {
     margin-right: -1rem;
-    width: 55%;
-    height: 90vh;
+    width: 50%;
   }
   .section1 {
+    min-height: 100vh;
     position: relative;
   }
   .section1 .section1_h2 {

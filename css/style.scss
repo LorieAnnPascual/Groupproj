@@ -122,7 +122,7 @@ header {
 .section1 {
    margin: 1rem;
    text-align: center;
-   height: 100vh;
+   min-height: 70vh;
    position: relative;
 
    .section1_h2 {
@@ -168,6 +168,10 @@ header {
       display: block;
    }
 
+   .overflow {
+      overflow: hidden;
+   }
+
    .nav_ul {
       position: fixed;
       left: 100%;
@@ -180,8 +184,10 @@ header {
       width: 100%;
       transition: 0.4s;
       height: 100vh;
+      text-align: center;
 
       .nav_a {
+         line-height: 8rem;
          color: $bg-secondary-color;
          font-size: 4.5rem;
       }
@@ -209,10 +215,14 @@ header {
    .toggle .line3 {
       transform: rotate(45deg) translate(-6px, -6px);
    }
+
+ 
 }
 
 @media screen and (min-width: 768px) {
+   
    .intro {
+      // background-color: red;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -223,12 +233,12 @@ header {
       }
       .intro_img {
          margin-right: -1rem;
-         width: 55%;
-         height: 90vh;
+         width: 50%;
       }
    }
 
    .section1 {
+      min-height: 100vh;
       position: relative;
 
       .section1_h2 {

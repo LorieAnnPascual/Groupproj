@@ -55,7 +55,9 @@ const navUl = document.querySelector('.nav_ul');
 const bodyEl = document.querySelector('body');
 const navLi = document.querySelectorAll('.nav_li');
 
+
 btnMenu.addEventListener('click', () => {
    navUl.classList.toggle('active');
    btnMenu.classList.toggle('toggle');
+   body.classList.toggle('overflow');
 });
