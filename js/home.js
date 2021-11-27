@@ -1,15 +1,21 @@
 'use strict';
 
 const introHeading = document.querySelector('.intro_h1');
+const btnMenu = document.querySelector('.btn_menu');
+const navUl = document.querySelector('.nav_ul');
+const navLi = document.querySelectorAll('.nav_li');
+const navA = document.querySelectorAll('.nav_a');
 const strName = introHeading.textContent;
 const splitText = strName.split('');
+let char = 0;
+let timer = setInterval(onTick, 40);
 introHeading.textContent = ``;
+const body = document.body;
+let lastscroll = 0;
 
 for (let i = 0; i < splitText.length; i++) {
    introHeading.innerHTML += `<span>` + splitText[i] + `</span>`;
 }
-let char = 0;
-let timer = setInterval(onTick, 40);
 
 function onTick() {
    const span = introHeading.querySelectorAll('span')[char];
@@ -27,8 +33,6 @@ function complete() {
 }
 
 /// Navigation ////
-const body = document.body;
-let lastscroll = 0;
 
 window.addEventListener('scroll', () => {
    const currentScroll = window.pageYOffset;
@@ -50,14 +54,19 @@ window.addEventListener('scroll', () => {
 
 //// Navbar ////////
 
-const btnMenu = document.querySelector('.btn_menu');
-const navUl = document.querySelector('.nav_ul');
-const bodyEl = document.querySelector('body');
-const navLi = document.querySelectorAll('.nav_li');
-
-
 btnMenu.addEventListener('click', () => {
    navUl.classList.toggle('active');
    btnMenu.classList.toggle('toggle');
-   body.classList.toggle('overflow');
+   // body.classList.toggle('overflow');
+   closeNav();
 });
+
+function closeNav() {
+   for (let i = 0; i < navA.length; i++) {
+      navA[i].addEventListener('click', () => {
+         navUl.classList.remove('active');
+         btnMenu.classList.remove('toggle');
+         // body.classList.toggle('overflow');
+      });
+   }
+}
