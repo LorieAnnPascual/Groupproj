@@ -149,6 +149,13 @@ body {
   padding-top: 10rem;
   font-size: 2.5rem;
   z-index: 100;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.section1 .reveal {
+  opacity: 1;
 }
 
 .overlay {
@@ -170,6 +177,18 @@ body {
 
 .section1_p {
   position: relative;
+  opacity: 0.9;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+}
+
+.p_reveal {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .section1_p::after {
@@ -183,69 +202,6 @@ body {
   top: 65%;
   opacity: 0.2;
   z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-  .hidden {
-    display: block;
-  }
-  .overflow {
-    overflow: hidden;
-  }
-  .nav_ul {
-    position: fixed;
-    left: 100%;
-    top: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #fff;
-    width: 100%;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    height: 100vh;
-    text-align: center;
-  }
-  .nav_ul .nav_a {
-    line-height: 8rem;
-    color: #181818;
-    font-size: 4.5rem;
-  }
-  .nav_ul.active {
-    left: 0;
-  }
-  .btn_menu > div {
-    background-color: #cecece;
-    width: 2rem;
-    height: 1px;
-    margin: 0.5rem 3rem;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .btn_menu {
-    cursor: pointer;
-  }
-  .toggle .line1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-            transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-  .toggle .line3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-            transform: rotate(45deg) translate(-6px, -6px);
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -329,5 +285,86 @@ body {
   }
   .section1 .section1_p {
     width: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hidden {
+    display: block;
+  }
+  .overflow {
+    overflow: hidden;
+  }
+  .nav_ul {
+    position: fixed;
+    left: 100%;
+    top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    width: 100%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    height: 100vh;
+    text-align: center;
+  }
+  .nav_ul .nav_a {
+    line-height: 6rem;
+    color: #181818;
+    font-size: 4.5rem;
+  }
+  .nav_ul.active {
+    left: 0;
+  }
+  .intro .intro_img {
+    width: 85%;
+    margin: auto;
+    height: auto;
+  }
+  .btn_menu > div {
+    background-color: #cecece;
+    width: 2rem;
+    height: 1px;
+    margin: 0.5rem 3rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .btn_menu {
+    cursor: pointer;
+  }
+  .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+            transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+            transform: rotate(45deg) translate(-6px, -6px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    margin-top: 4rem;
+  }
+  .nav .nav_ul {
+    top: 7vh;
+  }
+  .nav .nav_a {
+    text-align: center;
+    font-size: 3rem;
   }
 }
