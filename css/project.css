@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Style for Company Project */
 .project-box {
    text-align: center;
@@ -166,3 +167,114 @@
       font-size: 20px;
    }
 }
+=======
+#project {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+}
+.proj-title {
+    z-index: 100;
+    padding-top: 10rem;
+    font-size: 2.5rem;
+    z-index: 100;
+}
+#project-content {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+#proj1 {
+    width: 28vw;
+    height: 55vh;
+}
+#proj2 {
+    width: 28vw;
+    height: 55vh;
+}
+#proj3 {
+    width: 28vw;
+    height: 55vh;
+}
+.proj-img1 {
+    width: 100%;
+    height: 100%;
+}
+.proj-img2 {
+    width: 100%;
+    height: 100%;
+}
+.proj-img3 {
+    width: 100%;
+    height: 100%;
+}
+.hover-zoom {
+    overflow: hidden;
+    margin: 0;
+}
+#projIMG {
+    transition: all .3s ease-in-out;
+}
+.hover-zoom:hover #projIMG {
+    transform: scale(1.03);
+}
+.client-name {
+    font-weight: bold;
+    color: #555;
+    margin-top: 5px;
+}
+.service {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    #project {
+        margin: 0;
+        padding: 0;
+    }
+    #project-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .projBOX1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .projBOX2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .projBOX3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #proj1 {
+        width: 50vw;
+    }
+    #proj2 {
+        width: 50vw;
+    }
+    #proj3 {
+        width: 50vw;
+    }
+    .proj-text {
+        margin: auto 0;
+    }
+    .service {
+        font-size: 15px;
+    }
+    .proj-img1 {
+        max-width: 100%;
+    }
+}
+>>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
