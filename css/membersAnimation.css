@@ -40,6 +40,14 @@
   }
    */
 
+  .members .center-text h1{
+      /* padding: 30px; */
+      /* margin-top: 20px; */
+      /* margin-bottom: 30px; */
+      opacity: 0;
+      transform: scale(0.1);
+      transition:all 1s ease-in-out;
+  }
   .about-right{
       /* padding: 30px; */
       /* margin-top: 20px; */
