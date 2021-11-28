@@ -63,11 +63,11 @@ window.addEventListener('scroll', () => {
       section1Title.classList.add('reveal');
       section1P.classList.add('p_reveal');
    } else {
-
       section1Title.classList.remove('reveal');
       section1P.classList.remove('p_reveal');
    }
    if (currentScroll > 1000) {
+      // revealIntro();
       section1Title.classList.remove('reveal');
       section1P.classList.remove('p_reveal');
    }

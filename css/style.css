@@ -53,16 +53,24 @@ body {
 .nav .logo {
   padding-bottom: 0.5rem;
   margin-left: 8%;
-}
-
-.nav .nav_a {
-  font-size: 0.9rem;
-  text-decoration: none;
   color: #cecece;
 }
 
+.nav .nav_a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #cecece;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d3003f), to(#ec5800));
+  background-image: linear-gradient(90deg, #d3003f, #ec5800);
+  background-size: 0% .2rem;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 300ms ease-in-out;
+  transition: background-size 300ms ease-in-out;
+}
+
 .nav .nav_a:hover {
-  border-bottom: 3px solid #d3003f;
+  background-size: 100% 0.2rem;
 }
 
 .intro {
@@ -75,6 +83,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 8rem;
+  position: relative;
+}
+
+.intro .intro::before {
+  position: absolute;
 }
 
 .intro .intro_text {
@@ -112,6 +125,8 @@ body {
 .intro .intro_text .intro_p {
   line-height: 1.5;
   font-size: 1.1rem;
+  -webkit-animation: fadein 1s ease-in;
+          animation: fadein 1s ease-in;
 }
 
 .intro .btn_read {
@@ -134,7 +149,10 @@ body {
 }
 
 .intro .intro_img {
+  width: 100%;
   margin-top: 1rem;
+  position: relative;
+  z-index: -1;
 }
 
 .section1 {
@@ -187,6 +205,8 @@ body {
 }
 
 .p_reveal {
+  -webkit-animation: fadein 2s ease-in-out;
+          animation: fadein 2s ease-in-out;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -204,6 +224,24 @@ body {
   z-index: -1;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .scroll-down .header {
     -webkit-transform: translate3d(0, -100%, 0);
@@ -218,6 +256,9 @@ body {
   .scroll-up .header .nav {
     background-color: #fff;
     border-bottom: 3px solid #cecece;
+  }
+  .scroll-up .header .nav .logo {
+    color: #181818;
   }
   .scroll-up .header .nav .nav_a {
     color: #181818;
