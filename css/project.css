@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 /* Style for Company Project */
 .project-box {
    text-align: center;
@@ -167,7 +167,10 @@
       font-size: 20px;
    }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 364efebe3b1cf373bb52354f8137bb472acb16b9
 #project {
     display: flex;
     flex-direction: column;
@@ -277,4 +280,3 @@
         max-width: 100%;
     }
 }
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2

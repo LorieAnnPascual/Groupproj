@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 .members > .center-text h1 {
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+.members > .center-text h1{
+>>>>>>> 364efebe3b1cf373bb52354f8137bb472acb16b9
    /* margin: auto; */
    text-align: center;
    margin-top: 20%;
