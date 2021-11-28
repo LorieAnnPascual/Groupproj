@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/members.css" />
       <link rel="stylesheet" href="css/contact.css" />
       <link rel="stylesheet" href="css/membersAnimation.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <script
          src="https://kit.fontawesome.com/64d58efce2.js"
          crossorigin="anonymous"
@@ -71,45 +72,48 @@
                Quae cumque facere enim ad tempore ipsum eum odit.
             </p>
          </section>
-<<<<<<< HEAD
       </div>
       <script src="js/bootstrap.min.js"></script>
-=======
 
          <section id="project" class="container-fluid">
-            <div class="container-sm mb-3" id="proj-title-box">
+            <div class="container-sm mb-3" id="proj-title-box" data-aos="fade-in" data-aos-duration="2000">
                <h1 class="text-center proj-title">Company Projects</h1>
             </div>
             <div class="container" id="project-content">
-               <div class="col-sm projBOX1">
+               <div class="col-sm projBOX1" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="50">
                   <figure id="proj1" class="hover-zoom">
                      <img src="media/project1.png" class="proj-img1" alt="garyvee" id="projIMG">
                   </figure>
                   <figcaption class="text-center  proj-text">
                      <p class="client-name">Gary Vaychernuk</p>
-                     <a href="#" target="_blank" class="service">Social Media Management</a>
+                     <p class="service">Social Media Management</p>
                   </figcaption>
                </div>
-               <div class="col-sm projBOX2">
+               <div class="col-sm projBOX2" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="75">
                   <figure id="proj2" class="hover-zoom">
                      <img src="media/project2.png" class="proj-img2" alt="kalsadacoffee" id="projIMG">
                   </figure>
                   <figcaption class="text-center  proj-text">
                      <p class="client-name">Kalsada Coffee</p>
-                     <a href="#" target="_blank" class="service">Web Development</a>
+                     <p class="service">Web Development</p>
                   </figcaption>
                </div>   
-               <div class="col-sm projBOX3">
+               <div class="col-sm projBOX3" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
                   <figure id="proj3" class="hover-zoom">
                      <img src="media/project3.png" class="proj-img3" alt="chookstogo" id="projIMG">
                   </figure>
                   <figcaption class="text-center proj-text">
                      <p class="client-name">Chooks to Go</p>
-                     <a href="#" target="_blank" class="service">UX/UI Design</a>
+                     <p class="service">UX/UI Design</p>
                   </figcaption>
                </div>
             </div>
          </section>
+
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+            AOS.init();
+         </script>
 
          <!--richard -->
          <section class="members">
@@ -341,7 +345,6 @@
          </section>
       </div> -->
 
->>>>>>> 5f2a11a (added company project section)
       <script src="js/home.js"></script>
       <script src="js/animation.js"></script>
    </body>
