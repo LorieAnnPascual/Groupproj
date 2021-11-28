@@ -14,7 +14,6 @@
          src="https://kit.fontawesome.com/64d58efce2.js"
          crossorigin="anonymous"
       ></script>
-
       <link rel="stylesheet" href="css/bootstrap.min.css" />
 
       <title>Homepage</title>
@@ -76,11 +75,11 @@
       <script src="js/bootstrap.min.js"></script>
 
          <section id="project" class="container-fluid">
-            <div class="container-sm mb-3" id="proj-title-box" data-aos="fade-in" data-aos-duration="2000">
+            <div class="container-sm mb-3" id="proj-title-box" data-aos="fade-in" data-aos-duration="1000">
                <h1 class="text-center proj-title">Company Projects</h1>
             </div>
             <div class="container" id="project-content">
-               <div class="col-sm projBOX1" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="50">
+               <div class="col-sm projBOX1" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">
                   <figure id="proj1" class="hover-zoom">
                      <img src="media/project1.png" class="proj-img1" alt="garyvee" id="projIMG">
                   </figure>
@@ -89,7 +88,7 @@
                      <p class="service">Social Media Management</p>
                   </figcaption>
                </div>
-               <div class="col-sm projBOX2" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="75">
+               <div class="col-sm projBOX2" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1500">
                   <figure id="proj2" class="hover-zoom">
                      <img src="media/project2.png" class="proj-img2" alt="kalsadacoffee" id="projIMG">
                   </figure>
@@ -98,7 +97,7 @@
                      <p class="service">Web Development</p>
                   </figcaption>
                </div>   
-               <div class="col-sm projBOX3" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+               <div class="col-sm projBOX3" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="2000">
                   <figure id="proj3" class="hover-zoom">
                      <img src="media/project3.png" class="proj-img3" alt="chookstogo" id="projIMG">
                   </figure>
@@ -112,7 +111,7 @@
 
          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
          <script>
-            AOS.init();
+            AOS.init({once: false,});
          </script>
 
          <!--richard -->
@@ -248,12 +247,12 @@
                      <span class="circle two"></span>
                      <span class="circle-three"></span>
 
-                     <form action="index.html" autocomplete="off">
+                     <form action="index.html" autocomplete="off" name="contactForm" id="cForm" onsubmit="return sendData()">
                         <h3 class="title">Contact us</h3>
                         <div class="input-container">
                            <input
                               type="text"
-                              name="name"
+                              name="fname"
                               class="input"
                               placeholder="Write your name"
                            />
@@ -261,7 +260,7 @@
                         <div class="input-container">
                            <input
                               type="text"
-                              name="name"
+                              name="lname"
                               class="input"
                               placeholder="Write your last name"
                            />
@@ -323,11 +322,12 @@
                            ></textarea>
                            <span>Message</span>
                         </div>
-                        <input type="submit" value="Send" class="btn" />
+                        <input type="submit" value="Send" class="btn"/>
                      </form>
                   </div>
                </div>
             </div>
+
             <!-- <h3 style="text-align: center">Copyright 2021</h3> -->
             <footer class="footer-distributed">
 
@@ -357,6 +357,12 @@
                   <p>Company LRM &copy; 2021</p>
                </div>
       
+
+
+      <script src="form.js"></script>
+
+            <h3 style="text-align: center">Copyright 2021</h3>
+
          </footer>
       </div>
 
