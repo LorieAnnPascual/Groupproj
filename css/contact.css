@@ -1,24 +1,14 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-=======
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
 }
 
 body,
 input,
 textarea {
-<<<<<<< HEAD
    font-family: 'Poppins', sans-serif;
 }
 
@@ -132,7 +122,6 @@ form .work {
 form .work label input {
    display: flex;
    justify-content: center;
-=======
   font-family: "Poppins", sans-serif;
 }
 
@@ -246,13 +235,11 @@ form .work{
 form .work label input{
   display: flex;
   justify-content: center;
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
    align-items: center;
    cursor: pointer;
 }
 
 .title {
-<<<<<<< HEAD
    color: black;
    font-weight: 500;
    font-size: 1.5rem;
@@ -341,7 +328,6 @@ textarea.input {
    color: transparent;
    pointer-events: none;
    z-index: 500;
-=======
   color: black;
   font-weight: 500;
   font-size: 1.5rem;
@@ -431,12 +417,10 @@ textarea.input {
   color: transparent;
   pointer-events: none;
   z-index: 500;
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
 }
 
 .input-container span:before,
 .input-container span:after {
-<<<<<<< HEAD
    content: '';
    position: absolute;
    width: 10%;
@@ -460,7 +444,6 @@ textarea.input {
    transform: translateY(-50%);
    left: 25px;
    font-size: 0.8rem;
-=======
   content: "";
   position: absolute;
   width: 10%;
@@ -484,12 +467,10 @@ textarea.input {
   transform: translateY(-50%);
   left: 25px;
   font-size: 0.8rem;
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
 }
 
 .input-container.focus span:before,
 .input-container.focus span:after {
-<<<<<<< HEAD
    width: 50%;
    opacity: 1;
 }
@@ -630,7 +611,6 @@ textarea.input {
       right: 50%;
    }
    .circle {
-=======
   width: 50%;
   opacity: 1;
 }
@@ -771,12 +751,10 @@ textarea.input {
     right: 50%;
   }
   .circle{
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
       right: 100px;
       bottom: 15em;
       /* top: 50px; */
       opacity: 20%;
-<<<<<<< HEAD
    }
 
    .text {
@@ -790,7 +768,6 @@ textarea.input {
    .btn {
       margin-left: 25%;
    }
-=======
   }
 
   .text {
@@ -803,12 +780,10 @@ textarea.input {
   .contact-us-container , .btn{
     margin-left: 25%;
   }
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
 }
 
 /* for 480 px screen size */
 @media (max-width: 480px) {
-<<<<<<< HEAD
    .container {
       padding: 1.5rem;
    }
@@ -858,7 +833,6 @@ textarea.input {
    .contact-us-container .btn {
       padding: 0.45rem 1.2rem;
    }
-=======
   .container {
     padding: 1.5rem;
   }
@@ -909,7 +883,6 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 
->>>>>>> ea21f747f112533fc3e7e69de63ad849bd8b11c2
 }
 
 @media (min-width: 360px) {
