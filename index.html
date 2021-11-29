@@ -20,7 +20,7 @@
       <title>Homepage</title>
    </head>
    <body class="body">
-      <div class="container-fluid">
+      <div class="container-fluid" id="TopSection">
          <header id="header" class="header">
             <nav class="nav">
                <h2 class="logo">LRM</h2>
@@ -32,7 +32,7 @@
                      <a class="nav_a" href="#project">Portfolio</a>
                   </li>
                   <li class="nav_li">
-                     <a class="nav_a" href="#about">About Us</a>
+                     <a class="nav_a"  href="#AboutUsSection">About Us</a>
                   </li>
                   <li class="nav_li">
                      <a class="nav_a" href="#contact">Contact Us</a>
@@ -116,7 +116,7 @@
          </script>
 
          <!--richard -->
-         <section class="members">
+         <section class="members" id="AboutUsSection">
             <div class="center-text">
                <h1>
                  Meet Our Team
@@ -144,7 +144,7 @@
                </div>
             </article>
 
-            <article class="about-left">
+            <article class="about-left" id="color">
                <div class="main-left">
                   <img
                      class="member-photo"
@@ -187,9 +187,6 @@
             </article>
          </section>
 
-         <!--FOOTER-->
-
-         <footer>
             <!-- left form -->
             <div id="contact" class="container-fluid contact-us-container">
                <span class="big-circle"></span>
@@ -285,7 +282,7 @@
                         <!-- list of work -->
                         <div class="work">
                            <!-- input checkbox and label -->
-                           <p>What website do you need?</p>
+                           <p>How can we help you?</p>
                            <label for="webDesign">Web Design</label>
                            <input
                               type="checkbox"
@@ -328,7 +325,8 @@
                   </div>
                </div>
             </div>
-            <!-- <h3 style="text-align: center">Copyright 2021</h3> -->
+
+            <!--FOOTER-->
             <footer class="footer-distributed">
 
                <div class="footer-right">
@@ -343,15 +341,12 @@
                <div class="footer-left">
       
                   <p class="footer-links">
-                     <a class="link-1" href="#">Home</a>
+                     <a class="link-1" href="#TopSection">Home</a>
       
-                     <a href="#">Blog</a>
+                     <a href="#project">Service</a>
       
-                     <a href="#">Pricing</a>
+                     <a href="#AboutUsSection">About</a>
       
-                     <a href="#">About</a>
-      
-                     <a href="#">Contact</a>
                   </p>
       
                   <p>Company LRM &copy; 2021</p>
