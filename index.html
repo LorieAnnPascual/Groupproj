@@ -91,8 +91,8 @@
             <div
                class="col-sm projBOX1"
                data-aos="fade-in"
-               data-aos-duration="2000"
-               data-aos-delay="1000"
+               data-aos-duration="1000"
+               data-aos-delay="500"
             >
                <figure id="proj1" class="hover-zoom">
                   <img
@@ -110,8 +110,8 @@
             <div
                class="col-sm projBOX2"
                data-aos="fade-in"
-               data-aos-duration="2500"
-               data-aos-delay="1500"
+               data-aos-duration="1500"
+               data-aos-delay="750"
             >
                <figure id="proj2" class="hover-zoom">
                   <img
@@ -129,8 +129,8 @@
             <div
                class="col-sm projBOX3"
                data-aos="fade-in"
-               data-aos-duration="3000"
-               data-aos-delay="2000"
+               data-aos-duration="2000"
+               data-aos-delay="1000"
             >
                <figure id="proj3" class="hover-zoom">
                   <img
@@ -283,39 +283,47 @@
                   autocomplete="off"
                   name="contactForm"
                   id="cForm"
-                  onsubmit="return sendData()"
+                  onsubmit="return clientForm()"
                >
                   <h3 class="title">Contact us</h3>
                   <div class="input-container">
                      <input
+                        id="fName"
                         type="text"
-                        name="fname"
+                        name="fName"
                         class="input"
                         placeholder="Write your name"
+                        required
                      />
                   </div>
                   <div class="input-container">
                      <input
+                        id="lName"
                         type="text"
-                        name="lname"
+                        name="lName"
                         class="input"
                         placeholder="Write your last name"
+                        required
                      />
                   </div>
                   <div class="input-container">
                      <input
+                        id="email"
                         type="email"
                         name="email"
                         class="input"
                         placeholder="Write your email"
+                        required
                      />
                   </div>
                   <div class="input-container">
                      <input
+                        id="phone"
                         type="tel"
                         name="phone"
                         class="input"
                         placeholder="Write your Mobile Number"
+                        required
                      />
                   </div>
                   <!-- list of work -->
@@ -326,7 +334,7 @@
                      <input
                         type="checkbox"
                         name="checkbox"
-                        id="box"
+                        id="checkbox"
                         value="Web Design"
                      />
 
@@ -334,7 +342,7 @@
                      <input
                         type="checkbox"
                         name="checkbox"
-                        id="box"
+                        id="checkbox"
                         value="Web Development"
                      />
 
@@ -342,7 +350,7 @@
                      <input
                         type="checkbox"
                         name="checkbox"
-                        id="box"
+                        id="checkbox"
                         value="Logo Design"
                      />
 
@@ -350,20 +358,21 @@
                      <input
                         type="checkbox"
                         name="checkbox"
-                        id="box"
+                        id="checkbox"
                         value="other"
                      />
                   </div>
                   <!-- seperated div  text area -->
                   <div class="input-container textarea">
                      <textarea
+                        id="message"
                         name="message"
                         class="input"
                         placeholder="Write your message"
                      ></textarea>
                      <span>Message</span>
                   </div>
-                  <input type="submit" id="btn" value="Send" class="btn" />
+                  <input type="button" id="btn" value="Send" class="btn" />
                </form>
             </div>
          </div>
