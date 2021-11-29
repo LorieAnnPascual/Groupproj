@@ -66,14 +66,12 @@ window.addEventListener('scroll', () => {
       section1Title.classList.remove('reveal');
       section1P.classList.remove('p_reveal');
    }
-   if (currentScroll > 1000) {
-      // revealIntro();
+   if (currentScroll > 1400) {
+
       section1Title.classList.remove('reveal');
       section1P.classList.remove('p_reveal');
    }
-   // if (currentScroll > 1000) {
-   //    section1Title.classList.remove('reveal');
-   // }
+
 
    lastscroll = currentScroll;
 });

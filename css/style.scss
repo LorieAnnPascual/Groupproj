@@ -131,14 +131,7 @@ body {
       position: relative;
       z-index: -1;
    }
-   // .intro_img::before {
-   //    content: 'hello';
-   //    font-size: 5rem;
-   //    background-color: #ec5800;
-   //    width: 400px;
-   //    height: 400px;
-   //    position: absolute;
-   // }
+
 }
 
 .section1 {
@@ -208,9 +201,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-   // body {
-   //    display: none;
-   // }
+
 
    .scroll-down .header {
       transform: translate3d(0, -100%, 0);
@@ -304,9 +295,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-   // body {
-   //    display: none;
-   // }
+
    .hidden {
       display: block;
    }

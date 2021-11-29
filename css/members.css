@@ -107,9 +107,7 @@
 }
 
 @media screen and (min-width: 375px) {
-   /* body {
-      display: none;
-   } */
+
    .members h1 {
       font-size: 2.5rem;
       margin-bottom: 2.5rem;
