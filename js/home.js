@@ -44,7 +44,6 @@ revealIntro();
 window.addEventListener('scroll', () => {
    //// Header ///
    const currentScroll = window.pageYOffset;
-   console.log(currentScroll);
 
    if (currentScroll <= 0) {
       body.classList.remove('scroll-up');
